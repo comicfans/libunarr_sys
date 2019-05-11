@@ -1,17 +1,17 @@
 extern crate libc;
 
-use libc::{c_void,c_char,size_t,c_int};
+pub use libc::{c_void,c_char,size_t,c_int};
 
 #[link(name = "unarr")]
 
 
-type p_ar_stream = *const c_void;
+pub type p_ar_stream = *const c_void;
 
-type p_ar_archive = *const c_void;
+pub type p_ar_archive = *const c_void;
 
-type off64_t = i64;
+pub type off64_t = i64;
 
-type time64_t = i64;
+pub type time64_t = i64;
 
 extern "C"{
     pub fn ar_open_file(path:*const c_char ) -> p_ar_stream;

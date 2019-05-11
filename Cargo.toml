@@ -3,7 +3,7 @@ authors = ["wangxinyu <comicfans44@gmail.com>"]
 build = "build.rs"
 edition = "2018"
 links = "unarr"
-name = "libunarr_sys"
+name = "unarr_sys"
 version = "0.1.0"
 [dependencies]
 ffi = "*"
