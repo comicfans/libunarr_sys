@@ -44,6 +44,8 @@ extern "C"{
 
     pub fn ar_entry_get_name(ar:p_ar_archive )-> *const c_char ;
 
+    pub fn ar_entry_zip_get_raw_name(ar:p_ar_archive)-> *const c_char;
+
     pub fn ar_entry_get_offset(ar:p_ar_archive)->off64_t;
 
     pub fn ar_entry_get_size(ar :p_ar_archive)->size_t ;
